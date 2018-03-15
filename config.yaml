@@ -2,5 +2,6 @@ baseURL: https://wojtek.bednarzak.com
 languageCode: en_us
 title: Wojtek Bednarzak
 theme: bednarzak
+googleAnalytics: UA-42415197-1
 permalinks:
   blog: /blog/:year/:month/:title/
