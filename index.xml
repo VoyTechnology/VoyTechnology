@@ -6,10 +6,23 @@
     <description>Recent content in Home on Wojtek Bednarzak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en_us</language>
-    <lastBuildDate>Thu, 01 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Mar 2018 18:14:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wojtek.bednarzak.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Future of Netsocs</title>
+      <link>https://wojtek.bednarzak.com/blog/2018/03/future-of-netsocs/</link>
+      <pubDate>Thu, 15 Mar 2018 18:14:00 +0000</pubDate>
+      
+      <guid>https://wojtek.bednarzak.com/blog/2018/03/future-of-netsocs/</guid>
+      <description>&lt;p&gt;Networking Societies. If you have been studying computer science in an
+university, you might have been or heard of one. But are they still relevant
+in today&amp;rsquo;s world of instant communication and common internet access?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>My story with DigitalOcean</title>
