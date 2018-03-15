@@ -18,33 +18,6 @@ jobs:
       - run:
           name: "Build Site"
           command: HUGO_ENV=production hugo -v
-      - persist_to_workspace:
-          root: /wojtek.bednarzak.com
-          paths: .
-  # TODO: Add a test job to test for broken links and bad markdown.
-  deploy:
-    docker:
-      - image: alpine:latest
-    working_directory: /wojtek.bednarzak.com
-    steps:
-      - attach_workspace:
-          at: /wojtek.bednarzak.com
       - run:
-          name: "Install OS dependencies"
-          command: apk add -U git
-      - run:
-          name: "Deploy (if master)"
-          command: /wojtek.bednarzak.com/.circleci/deploy.sh
-
-
-workflows:
-  version: 2
-  build_and_deploy:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+          name: "Deploy if on master"
+          command: if [ $CIRCLE_BRANCH = 'master' ]; then /wojtek.bednarzak.com/.circleci/deploy.sh; fi
