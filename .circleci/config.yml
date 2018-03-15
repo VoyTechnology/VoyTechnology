@@ -8,10 +8,10 @@ jobs:
     environment:
       - HUGO_VERSION: "0.37.1"
     steps:
-      - checkout
       - run:
           name: "Install OS dependencies"
           command: apk add -U wget git openssh-client
+      - checkout
       - run:
           name: "Download Hugo"
           command: /wojtek.bednarzak.com/.circleci/install.sh
