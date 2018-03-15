@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<title>Symptom Classifier</title>
+<style>
+
+body, html {
+	margin: 0;
+	font-family: 'Arial'
+}
+
+header {
+	background-color: blue;
+	color: white;
+	padding: 0.5rem;
+}
+
+header h1 {
+	margin: 0;
+	display: inline-block;
+}
+
+header h3 {
+	margin: 0;
+	display: inline-block;
+}
+
+main {
+	box-sizing: border-box;
+	margin: 2rem auto;
+	width: 75%;
+	font-size: 200%;
+}
+
+main form label {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+main form input {
+	font-size: 100%;
+}
+
+main .result_wrapper {
+	display: none;
+	margin-top: 2rem;
+}
+
+main .result_wrapper #result {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42415197-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<script>
+	const results = [
+		"Cancer",
+		"Smallpox",
+		"Spanish Flu",
+		"Black Death",
+		"Malaria",
+		"AIDS",
+		"Cholera",
+		"Man Cold",
+	];
+
+	window.onload = () => {
+		const s = (q) => document.querySelector(q);
+		const sq = window.location.search;
+		if(sq.substring(0, 3) == "?q="){
+			const r = sq.toLowerCase().charCodeAt(3) % results.length;
+			if(r) {
+				s("#q").value = sq.substring(3).replace(/\+/g, " ");
+				window.setTimeout(() => {
+						s(".result_wrapper").style.display = "block";
+						s("#result").textContent = results[r];
+				}, 500);
+			}
+		}
+
+	}
+</script>
+<header>
+	<h1>Symptom Classifier</h1>
+	<h3>What is wrong with me?</h3>
+</header>
+<main>
+	<form action="" method="get">
+		<label for="q">My symptoms are:</label>
+		<input id="q" name="q"></input>
+		<input type="submit" value="Check">
+	</form>
+	<span class="result_wrapper">You have: <span id="result"></span>
+</main>
+<footer>
+	Disclaimer: The content of this website is purely satirical. Please consult
+	your doctor in case of real life emergency and do not trust the internet.
+</footer>

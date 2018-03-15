@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Wojtek Bednarzak</title>
+    <link>https://wojtek.bednarzak.com/</link>
+    <description>Recent content in Home on Wojtek Bednarzak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_us</language>
+    <lastBuildDate>Thu, 01 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wojtek.bednarzak.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My story with DigitalOcean</title>
+      <link>https://wojtek.bednarzak.com/blog/2016/12/my-story-with-digitalocean/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://wojtek.bednarzak.com/blog/2016/12/my-story-with-digitalocean/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s go to the beginning of time. Back in 2013 I was developing an Android app
+French Made Easy back in secondary school. The app data was written in Wordpress
+and then extracted using a PHP script into JSON format.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

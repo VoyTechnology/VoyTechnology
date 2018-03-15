@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/voy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://wojtek.bednarzak.com
+  * I am voy (https://keybase.io/voy) on keybase.
+  * I have a public key with fingerprint 2D2D FED5 1AB0 6BE3 5D5F  B331 0A3D E4DE 3160 5343
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c705d17d48e1107db692b6a9728443bc2844becaba4b7fa260053c15835fa45e0a",
+      "fingerprint": "2d2dfed51ab06be35d5fb3310a3de4de31605343",
+      "host": "keybase.io",
+      "key_id": "0a3de4de31605343",
+      "kid": "0101fa569d3c50b9db16d6915fa4173be339926616d54e668b79cef1465c3752f5b20a",
+      "uid": "67553fd5f359ac545d59882224f14b19",
+      "username": "voy"
+    },
+    "service": {
+      "hostname": "wojtek.bednarzak.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1511741045,
+  "expire_in": 157680000,
+  "prev": "230508930af25415421e1964cd8d417ec139625462b0f72bcc564d4ba1db1fe3",
+  "seqno": 31,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMNvAnicZVJtTBRHGL4DpIjUUqkGW5BkLSEhiDu7O7u3B0c/LNKaFEqgpEXh3I9Z
+brnj7rg7sIiIDaWKgRTSSjWIIeWQYi9nlWCEKgTRxkhJ5EgDJZTaqPEjKKkaitJw
+naX6q/PnzbzzPM8888x7+eVQXaQ+0nRrFuzO26YfHW6r0BW+UVBRTYgOuYowVhNW
+tFKQTUZuj9mqyoSRIAFFShwJZcDJjAEBQHKyyPKUyAo8RxkYhhYlrYhIEkSBETlF
+oFiShLQEoIGGisBARApECqGo9hLkcrpUuwfLUjIlK0iGQBBJVkQ0lKEi0jQgBVpG
+jIxowGINhsZEi8OtMbA5UXCjVNWBe3hj/s/e//EvfJNAESDLy7QESZGXRcDKLA80
+R4Cj8ZU0z1Msi7uQQSxrEDleQgpgWCjRHKQUKFIrvitW5FgOQlrBJmnICxJksF/e
+YKAoisEUEfAa0I1cdqEMYXSlo4qoSSFwo1KVkJap9ojnh3scpR5kTRWRbBdcewVr
+quQow3Sny+FxSA4bRlg8HqfbqCl4qpwrFCSan4uZRdUu4ygxoxK53KrDThgBRkoe
+VVMHEACOASQDUwj0mVN1IbOqISDHGki8tHtQpfYBNAlJA0+TgkJBBkCGAgjwLCPJ
+BhkHhCRA8yw+YSmRVDhKlCTIMjIjCgAnqSAtaDcqtzsIIw2wT6EEa7rVErvgqXAh
+oubS8K4wnT5SF74qRJsxXeTq6BeTN3A+WleXH2pa98lEzkjGDyOp6ccmxh89jOsb
+WLyS+cpePbK07Mi/NzPzy2D6yYjHd8ZqQ2/nxN4IyAFvZnc5Woo9Pnm0oWde6jxr
+3LKjbrT7SZIQHrvQ5JkYkA70rmmaWsv6H9CHpf6duuTs67lFyRlRTa3x/Ruylk89
+ODQ0dsdnWsy9emr4jK/h64Tcjyybg5emYzK8T/3eg98mFrxb+Lqpce2WtOb3SwM3
+DI3lvVfzrrwmvn3/eErX+gXbvsLDbU2HuMWh3fuCyT2lQl1t228z7NO1xps5fsu1
+Y4u3vv81MSqSH2j/q8Vvq/78my9m07bCPCGrqX6JL75NPxkTtmdeL380biiaO5ey
+MP3HQb3NFN+XODPLt5ppZU+nfnPo1tMVMUTHLiWz/6e7JcmBuISWsrDi9IsjupAj
+0bXfnRk78tX8SMEG1XSybOOByq53ku89rB6a+DEuJIqhasN0q+Kz9ba2V82+vBpd
+afaJpKKC0tH54Evni9x/f5AYP10fsi7tYrv3vv7ax407Uc9iYzBC2SQ9Gzp3YVtn
+R/PR9f5PgbfdlbPfyzSczV9tDTf6QEfQmodM3sthU392O2r3b9ze+uzL5vHBrBN0
+YPjDrjXWqUAwxzj5c4M491Zxq+53L3X3Zv3SpuX3LsQkGR+b5py+CH/CtPGfXstp
+2OsrW+6btA7mDyD05r/+/buw
+=+oVz
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/voy
+
+==================================================================
