@@ -5,6 +5,8 @@ jobs:
       # TODO: Replace with a hugo dedicated build image
       - image: alpine:latest
     working_directory: /wojtek.bednarzak.com
+    environment:
+      - HUGO_VERSION: "0.37.1"
     steps:
       - checkout
       - run:
