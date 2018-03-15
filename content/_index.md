@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Wojtek Bednarzak
 type: 'root-page'
 ---
 

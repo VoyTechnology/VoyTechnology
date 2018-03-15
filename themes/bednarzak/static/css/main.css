@@ -44,12 +44,23 @@ a {
 
 content {
   margin: 3rem auto;
-  width: 50%;
-  min-width: 800px;
+  width: 100%;
   display: flex;
   padding: 1rem;
   box-sizing: border-box;
   flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  content {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  content {
+    width: 50%;
+  }
 }
 
 content article {
@@ -63,4 +74,10 @@ content article h1 {
 
 content article span {
   color: grey;
+}
+
+footer {
+  font-size: 0.75rem;
+  color: gray;
+  text-align: center;
 }
