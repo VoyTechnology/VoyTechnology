@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: "Install OS dependencies"
-          command: apk add -U wget git
+          command: apk add -U wget git openssh-client
       - run:
           name: "Download Hugo"
           command: /wojtek.bednarzak.com/.circleci/install.sh
