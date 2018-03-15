@@ -1,7 +1,7 @@
 {{ template "theme/partials/header.html" . }}
 <article>
 {{ if ne .Type "root-page" }}
-<h3>{{ .Title }}</h3>
+<h1>{{ .Title }}</h1>
 <span>{{ .Date.Format "02 Jun 2006" }}</span>
 {{ end }}
 {{ .Content }}
