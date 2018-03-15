@@ -1,0 +1,10 @@
+{{ template "theme/partials/header.html" . }}
+<article>
+{{range .Pages}}
+  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+  <span>{{ .Date.Format "02 Jun 2006" }}</span>
+  <p>{{ .Summary }}</p>
+  <span><a href="{{ .Permalink }}">Read More<a></span>
+{{end}}
+</article>
+{{ template "theme/partials/footer.html" . }}

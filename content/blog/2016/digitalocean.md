@@ -1,11 +1,14 @@
 ---
 title: My story with DigitalOcean
-layout: post
+date: "2016-12-01T00:00:00Z"
+type: "blog"
 ---
 
 Let's go to the beginning of time. Back in 2013 I was developing an Android app
 French Made Easy back in secondary school. The app data was written in Wordpress
 and then extracted using a PHP script into JSON format.
+
+<!--more-->
 
 Because the data was not mine, I didn't want to use shared hosting for security
 concern, I began looking at VPS server. There was not much choice, and all
