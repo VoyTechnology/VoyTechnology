@@ -1,7 +1,3 @@
-#!/usr/bin/env bash
-
-set -e
-
 DEPLOY_DIR=deploy
 
 git config --global push.default simple
