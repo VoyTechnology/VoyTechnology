@@ -12,7 +12,7 @@ jobs:
           command: apk add -U wget
       - run:
           name: "Download Hugo"
-          command: ./.circleci/install.sh
+          command: /wojtek.bednarzak.com/.circleci/install.sh
       - run:
           name: "Build Site"
           command: HUGO_ENV=production hugo -v
@@ -32,7 +32,7 @@ jobs:
           command: apk add -U git
       - run:
           name: "Deploy (if master)"
-          command: ./.circleci/deploy.sh
+          command: /wojtek.bednarzak.com/.circleci/deploy.sh
 
 workflows:
   version: 2
