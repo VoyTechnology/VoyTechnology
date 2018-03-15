@@ -32,3 +32,11 @@ doubled the amount of RAM they provide.
 Don't get me wrong. If you look for express support, spin-up-spin-down servers
 then DigitalOcean is your best bet, but if you want to run something bigger,
 even as a student I would go for OVH or Scaleway.
+
+---
+
+__Edit__: DigitalOcean has [doubled their RAM][1] for most of their
+droplets at the beginning of 2018. Its a good step but the servers are still
+expensive.
+
+[1]: https://blog.digitalocean.com/new-droplet-plans/
