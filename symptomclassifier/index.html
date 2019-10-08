@@ -90,7 +90,7 @@ footer {
 			.map((c) => c.charCodeAt(0))
 			.reduce((sum, n) => sum+n);
 			
-		s('.results_wrapper').style.display = 'block';
+		s('.result_wrapper').style.display = 'block';
 		s('#result').textContent = results[sum % results.length];
 	}
 </script>
