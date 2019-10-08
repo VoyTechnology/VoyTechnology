@@ -79,18 +79,19 @@ footer {
 
 	window.onload = () => {
 		const s = (q) => document.querySelector(q);
-		const sq = window.location.search;
-		if(sq.substring(0, 3) == "?q="){
-			const r = sq.toLowerCase().charCodeAt(3) % results.length;
-			if(r) {
-				s("#q").value = sq.substring(3).replace(/\+/g, " ");
-				window.setTimeout(() => {
-						s(".result_wrapper").style.display = "block";
-						s("#result").textContent = results[r];
-				}, 500);
-			}
+		const q = (new URLSearchParams(window.location.search)).get('q');
+		if (q == null || q == '') {
+			return;
 		}
-
+		// Calculate the hash of the query. It is simply the sum of all chars.
+		const sum = q
+			.toLowerCase()
+			.split('')
+			.map((c) => c.charCodeAt(0))
+			.reduce((sum, n) => sum+n);
+			
+		s('.results_wrapper').style.display = 'block';
+		s('#result').textContent = results[sum % results.length];
 	}
 </script>
 <header>
