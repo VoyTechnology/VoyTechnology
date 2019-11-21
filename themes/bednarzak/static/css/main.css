@@ -1,28 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+:root {
+  --background-color: white;
+  --header-color: #352222;
+  --header-font-color: white;
+  --font-color: black;
+  --font-color-accent: grey;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: black;
+    --font-color: white;
+    --header-font-color: white;
+    --font-color-accent: #aaa;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--font-color);
 }
 
 header {
-  background-color: #352222;
+  background-color: var(--header-color);
+  color: var(--header-font-color);
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 header h1 {
-  color: white;
   font-size: 2rem;
   margin: 0.5rem;
   font-weight: normal;
+  margin-inline-start: 1rem;
 }
 
 header nav {
   display: flex;
-  color: white;
 }
 
 header nav a {
@@ -73,11 +94,12 @@ content article h1 {
 }
 
 content article span {
-  color: grey;
+  color: var(--font-color-accent);
 }
 
 footer {
   font-size: 0.75rem;
-  color: gray;
+  color: var(--font-color-accent);
   text-align: center;
+  vertical-align: bottom;
 }
