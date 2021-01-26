@@ -1,0 +1,37 @@
+# Deploy latest version of the website to Github Pages
+name: Github Pages
+
+# Controls when the action will run. 
+on:
+  push:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2 # Add more context to git, but not that much
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.37.1'
+
+      - name: Clean public directory
+        run: rm -rf public
+        
+      - name: Build
+        run: HUGO_ENV=production hugo -v
+
+      - name: Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
